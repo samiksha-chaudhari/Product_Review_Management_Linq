@@ -57,7 +57,10 @@ namespace Product_Review_Management_Linq
                 Console.WriteLine(list.ProductId + "------" + list.Count);
             }
         }
-
+        /// <summary>
+        /// method to retrive product ID and Review
+        /// </summary>
+        /// <param name="listProductReview"></param>
         //UC5
         public void RetrieveProductID(List<ProductReview> listProductReview)
         {
