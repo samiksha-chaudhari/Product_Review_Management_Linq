@@ -35,7 +35,7 @@ namespace Product_Review_Management_Linq
 
             while (defcount == 0)
             {               
-                Console.WriteLine("1.Product Review  2.Top 3 Records  3.rating >3 and productID is 1 or 4 or 9  4.Using Linq Oprator  5.Retriving Product ID and review  6.Exit");
+                Console.WriteLine("1.Product Review  2.Top 3 Records  3.rating >3 and productID is 1 or 4 or 9  4.Using Linq Oprator  5.Retriving Product ID and review  6.Skip Top 5  7.Exit");
                 Console.WriteLine("Choose Option :");
                 int choice = Convert.ToInt32(Console.ReadLine());//variable for taking choice from the user
 
@@ -64,6 +64,10 @@ namespace Product_Review_Management_Linq
                     case 5:
                         //UC5
                         management.RetrieveProductID(productReviewList);
+                        break;
+                    case 6:
+                        //UC6
+                        management.SkipTopFive(productReviewList);
                         break;
                     default:
                         Console.WriteLine("End");//default condition
