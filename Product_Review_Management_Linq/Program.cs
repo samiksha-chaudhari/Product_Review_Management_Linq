@@ -28,11 +28,18 @@ namespace Product_Review_Management_Linq
                 new ProductReview(){ProductId=15,UserId=10,Rating=4,Review="Nice",isLike=true },
                 new ProductReview(){ProductId=16,UserId=10,Rating=4,Review="Nice",isLike=true }
             };
+            /*
             foreach (var list in productReviewList)//to print list 
             {
                 Console.WriteLine("ProductId:- " + list.ProductId + " " + "UserId:- " + list.UserId
                     + " " + "Rating:- " + list.Rating + " " + "Review:- " + list.Review + " " + "isLike :- " + list.isLike);
             }
+            */
+
+            Management management = new Management();//creating object
+
+            //UC2
+            management.TopRecords(productReviewList);//calling TopRecords() 
 
         }
     }
